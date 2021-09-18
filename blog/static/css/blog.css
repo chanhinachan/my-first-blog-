@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #C25100;
+    background-color: #fb635e;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -8,6 +8,7 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    text-align: center;
 }
 
 .content {
@@ -15,7 +16,7 @@
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Hachi Maru Pop', cursive;
 }
 
 .date {
@@ -43,4 +44,8 @@ h1, h2, h3, h4 {
 
 .post h2 a, .post h2 a:visited {
     color: #000000;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
 }
