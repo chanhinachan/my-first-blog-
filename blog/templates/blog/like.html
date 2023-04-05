@@ -1,0 +1,10 @@
+<form action="{% url 'like' %}" method="POST">
+    {% csrf_token %}
+    {% if post.pk in liked_list %}
+        <button id="like" name="{{post.pk}}">❤︎</button>　<span name="{{post.pk}}-count" class="count"> {{ post.like.count }} </span>
+        
+    {% else %}
+        <button id="like" name="{{post.pk}}">♡</button>　<span name="{{post.pk}}-count" class="count"> {{ post.like.count }} </span>
+        
+    {% endif %}
+</form>

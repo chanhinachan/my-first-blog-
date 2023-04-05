@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h2>New tag</h2>
+    <form method="post">{% csrf_token %}
+        {{ new_tag.as_p }}
+        {% if error %}
+        {{ error }}
+        {% endif %}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+
+{% endblock %}
